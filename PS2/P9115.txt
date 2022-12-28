@@ -1,0 +1,47 @@
+m=int(input("Enter rows: "))
+n=int(input("Enter columns: "))
+
+mylist=[]
+mylist2=[]
+
+summ=[]
+diff=[]
+product=[]
+
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        value=int(input("Enter value for matrix 1:- "))
+        tmp.append(value)
+    mylist.append(tmp)
+print()
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        value=int(input("Enter value for matrix 2:- "))
+        tmp.append(value)
+    mylist2.append(tmp)
+
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        tmp.append(mylist[i][j] + mylist2[i][j])
+    summ.append(tmp)
+    
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        tmp.append(mylist[i][j] - mylist2[i][j])
+    diff.append(tmp)
+
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        tmp.append(mylist[i][j] * mylist2[i][j])
+    product.append(tmp)
+
+print("\nmatrix 1: ",mylist)
+print("\nmatrix 2: ",mylist2)
+print("\nsum of 2 matrix: ",summ)
+print("\ndiffrence of 2 matrix: ",diff)
+print("\nproduct of 2 matrix: ",product)

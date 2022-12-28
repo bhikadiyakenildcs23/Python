@@ -1,0 +1,19 @@
+Definition:- Write a Python program to input a string that is
+	     a list of words separated by commas. Construct
+             a dictionary that contains all these words as keys
+	     and their frequencies as values. Then display
+             the words with their quantities.
+
+lst=[]
+d=dict()
+user=input("Enter a String:")
+lst=user.split(',')
+print("list is:",lst)
+l=len(lst)
+for i in range(l):
+    c=0
+    for j in range(l):
+        if lst[i]==lst[j]:
+            c+=1
+    d[lst[i]]=c
+print("Dictionary is:",d)

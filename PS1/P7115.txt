@@ -1,0 +1,9 @@
+prn=float(input("Enter Principal Amount: "))
+yr=float(input("For How many Years? : "))
+
+rate=5 if yr<1 else 5.5 if 1<=yr<3 else 6 if 3<=yr<5 else 5.75
+print(rate)
+
+SI=prn*rate/100;
+MatAmt=prn+SI*yr;print("Principal Amount:Rs.",prn);print("Rate Of Interest: ",rate,"%");print("Number Of Years : ",yr);print("Simple Interest :Rs.",SI);print("Maturity Amount :Rs.",MatAmt)
+

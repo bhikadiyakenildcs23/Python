@@ -1,0 +1,31 @@
+PS-3
+Q.2. Write a Python program to create a list of lists of numbers (i.e. each element of the list is a list
+of numbers e.g. [[1, 2], [3, 2, 5], [1], [5, 3, 6, 7]]. Then generate a list from the given list where
+each element of the list is the length of each list in the given list. i.e. for the given example the
+output should be [2, 3, 1, 4]. You can take input of non-zero numbers, with an appropriate
+prompt, from the user until the user enters a zero to create the list assuming that the numbers
+are non-zero.
+
+outer=[]
+inner = []
+while(True):
+    cnf = input("Enter A Value:")
+    if int(cnf) == 0 :
+        brkcnf = input("Do You Want To Continue Or Not?(Y or N):")
+        if brkcnf == 'Y':
+            outer.append(len(inner))
+            inner = []
+            continue
+        elif brkcnf == 'N':
+            break
+        else:
+            print("You Have To Enter Y or N.")
+    else:
+        inner.append(int(cnf))
+        print(inner)
+outer.append(len(inner))
+print(outer)
+    
+        
+        
+        

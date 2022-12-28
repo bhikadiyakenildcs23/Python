@@ -1,0 +1,32 @@
+Definition:- Write a Python program to create a 
+	     list of lists of numbers (i.e. each 
+	     element of the list is a list of numbers
+	     e.g. [[1, 2], [3, 2, 5], [1], [5, 3, 6, 7]].
+	     Then generate a list from the given list where
+	     each element of the list is the length of each 
+	     list in the given list. i.e. for the given
+	     example the output should be [2, 3, 1, 4]. 
+	     You can take input of non-zero numbers, with 
+	     an appropriate prompt, from the user until 
+	     the user enters a zero to create the list 
+	     assuming that the numbers are non-zero.
+
+     Sample Input: [[1, 2], [3, 2, 5], [1], [5, 3, 6, 7]]
+     Output: [2, 3, 1, 4] 
+
+lst=[]
+n=int(input("Enter length for whole list:"))
+for i in range(0,n):
+    lst.append([])
+    inn=int(input("Enter length for inner list:"))
+    for j in range(inn):
+        no1=int(input("Enter number:"))
+        lst[i].append(no1)
+print(lst)
+count=0
+lenlist=[]
+for ele in lst:
+    count += len(ele)
+    lenlist.append(count)
+    count=0
+print('length',lenlist)

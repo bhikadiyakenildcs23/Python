@@ -1,0 +1,17 @@
+Q.8. Write a Python program to input a string that is a list of words separated by commas. 
+Construct  a dictionary that contains all these words as keys and their frequencies as values. 
+Then display  the words with their quantities.  
+
+string =input('Enter Strings (Saperated by Comma):')
+string_user=string.split(',')
+
+freq = {}
+  
+for i in string_user:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+  
+# printing result 
+print ("Frequency of Each Word in String:\n "+  str(freq))

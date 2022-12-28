@@ -1,0 +1,19 @@
+print("Enter Positive Numbers only! (Enter 0 To Exit Anywhere)")
+inp=None
+ecnt=0
+ocnt=0
+esum=0
+osum=0
+while inp != 0:
+    innp=input("Enter A number!")
+    inp=int(innp)
+    if inp%2==0:
+        ecnt+=1
+        esum=esum+inp
+    else:
+        ocnt+=1
+        osum=osum+inp
+print("Total EVEN Numbers: ",ecnt)
+print("Sum Of EVEN Numbers: ",esum)
+print("Total ODD Numbers: ",ocnt)
+print("Sum Of ODD Numbers: ",osum)

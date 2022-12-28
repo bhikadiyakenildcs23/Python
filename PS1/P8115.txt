@@ -1,0 +1,12 @@
+List=[0,0,0]
+grt=0
+for i in range(len(List)):
+    Val=input("Enter A numaric Value: ")
+    if Val.isnumeric()== True:
+        List[i]=Val
+        if float(List[i])>grt:
+            grt=float(List[i])
+    else:
+        print("You have to enter Numeric Value only!")
+        break
+print(grt," Is Largest Among these Numbers!")

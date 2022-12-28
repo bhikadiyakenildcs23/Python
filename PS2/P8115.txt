@@ -1,0 +1,38 @@
+m=int(input("Enter rows: "))
+n=int(input("Enter columns: "))
+
+mylist=[]
+mylist2=[]
+
+sum_column=[]
+sum_row=[]
+
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        value=int(input("Enter value for matrix 1:- "))
+        tmp.append(value)
+    mylist.append(tmp)
+
+print()
+
+for i in range(0,m):
+    tmp=[]
+    for j in range(0,n):
+        value=int(input("Enter value for matrix 2:- "))
+        tmp.append(value)
+    mylist2.append(tmp)
+
+for i in range(0,m):
+    t=int(0)
+    for j in range(0,n):
+        t = t + 1
+sum_row.append(t)
+print()
+
+
+print("\nmatrix 1: ",mylist)
+print("\nmatrix 2: ",mylist2)
+print("\nsumrow 2: ",sum_row)
+
+

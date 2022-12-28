@@ -1,0 +1,11 @@
+print("Press 0 To Exit!")
+count=0
+sum=0
+intinp=None
+while intinp!=0:
+    inp=input("Enter A Number!")
+    intinp=int(inp)
+    sum=sum+int(inp)
+    count+=1
+print("Total Sum Of Entered Numbers = ",sum)
+print("You Have Entered ",count-1," Numbers!")

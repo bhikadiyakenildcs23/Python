@@ -1,0 +1,23 @@
+ls=[5,4,3,1,2]
+cnt=sm=ocnt=osum=ecnt=esum=lrg=sml=0
+for i in ls:
+    cnt+=1
+    sm=sm+i
+    if i%2==0:
+        ecnt+=1
+        esum=esum+i
+    else:
+        ocnt+=1
+        osum=osum+i
+    if i>lrg:
+        lrg=i
+        sml=lrg
+    if i<sml:
+        sml=i
+
+print("1. Total Count= ",cnt)
+print("2. Sum = ",sm," Average = ",sm/2)
+print("3. ODD Count = ",ocnt," Sum = ",osum)
+print("3. EVEN Count = ",ecnt," Sum = ",esum)
+print("Largest Number = ",lrg)
+print("Smallest Number = ",sml)

@@ -1,0 +1,42 @@
+Definition:- Write a Python program to create a 
+	     list of elements of any data type 
+	     (mixed data type, i.e. some elements 
+	     maybe of type int, some elements of 
+	     type float and some elements of type 
+	     string). Split this list into three tuples
+	     containing elements of same data type 
+	     (i.e. 1st tuple of integers only,2nd tuple 
+	     of float only and 3rd tuple of strings only). 
+	     Take input from the user to create the list.
+
+Sample Input: [25, 4.5, ‘Hello’, 90, 20, 7.5, 9.25, ‘World’]
+Output:
+ List of Integers: [25, 90, 20]
+ List of Float Values: [4.5, 7.5, 9.25]
+ List of Strings: [‘Hello’, ‘World’] 
+
+import ast
+x=[]
+integers=[]
+floats=[]
+strings=[]
+print("Enter 0 for you want to quit")
+while True:
+    line=ast.literal_eval(input("enter characters:"))
+    if line==0:
+        break
+    x.append(line)
+print(x)
+for data in x:
+    if type(data)== str:
+        strings.append(data)
+    elif type(data)== float:
+        floats.append(data)
+    else:
+        integers.append(data)
+tintegers=tuple(integers)
+tfloats=tuple(floats)
+tstrings=tuple(strings)
+print('Integer values are:',tintegers)
+print('Float values are:',tfloats)
+print('string values are:',tstrings)

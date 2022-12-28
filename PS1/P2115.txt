@@ -1,0 +1,14 @@
+Struc=int(input('Enter 1. To Calculate Square Area!\nEnter 2. To Calculate Rectangle Area!\nEnter 3. To Calculate Circle Area!\n'))
+if Struc==2:
+    height=float(input("Enter Value of Height: "))
+    width=float(input("Enter Value of Width: "))
+    print("Area Of This Rectangle is = ",height*width)
+elif Struc==1:
+    Side=float(input("Input Value Of Side: "))
+    print("Area Of This Square = ",Side**2)
+elif Struc==3:
+    Radius=float(input("Enter Radius: "))
+    print("Area Of This Circle = ",3.14*Radius**2)
+else:
+    print("Please Enter Valid Value!")
+    

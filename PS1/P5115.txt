@@ -1,0 +1,19 @@
+Prn=float(input("Enter Principal Amount : "))
+Yr=float(input("Enter Year : "))
+if Yr<1:
+    rate=5
+elif 1<=Yr<3:
+    rate=5.5
+elif 3<=Yr<5:
+    rate=6
+else:
+    rate=5.75
+
+SmplInt=Prn*rate/100
+MatureAmt=Prn+(SmplInt*Yr)
+
+print("Principal Amount   : RS.",Prn)
+print("Rate Of Interest   : IntRate",rate,"%")
+print("Number Of Years    : ",Yr)
+print("Simple Interest    : Rs.",SmplInt)
+print("Maturity Amount    : Rs.",MatureAmt)

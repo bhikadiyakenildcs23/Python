@@ -1,0 +1,37 @@
+Definition:- Write a Python program to create a
+	     list of numbers by taking input from 
+	     the user. Split this list into two tuples
+	     where one tuple contains odd numbers, and 
+	     the other tuple contains even numbers from 
+	     the list. You can take input of non-zero 
+	     numbers, with an appropriate prompt,from 
+	     the user until the user enters a zero to 
+	     create the list assuming that the numbers 
+	     are nonzero.
+
+	Sample Input: [10, 12, 13, 90, 43, 32, 30, 11]
+	Output:
+ 	     Tuple of Odd Numbers: (13, 43, 11)
+ 	     Tuple of Even Numbers: (10, 12, 90, 32, 30) 
+
+x=[]
+even=[]
+odd=[]
+i=0
+while True:
+    no=int(input("Enter number:"))
+    if no==0:
+        break
+    x.append(no)
+
+for i in x:
+    if(i%2==0):
+        even.append(i)
+    else:
+        odd.append(i)
+              
+event=tuple(even)
+oddt=tuple(odd)
+print("Even :",event)
+print("Odd :",oddt)
+print("list is:",x)

@@ -1,0 +1,17 @@
+PS-3
+Q.1. Write a Python program to create a list of numbers by taking input from the user and then remove
+the duplicates from the list. You can take input of non-zero numbers, with an appropriate
+prompt, from the user until the user enters a zero to create the list assuming that the numbers
+are non-zero.
+
+ls=[]
+while(True):
+    inp=int(input("Enter A Number!"))
+    if inp == 0:
+        break
+    else:
+        ls.append(inp)
+        
+    st = set(ls)
+    ls = list(st)
+print(ls)

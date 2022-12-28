@@ -1,0 +1,4 @@
+Temp=float(input("Enter Temperature in celsius:"))
+Fehreinheit=Temp*(9/5)+32
+print("Temperature in Celsius: ",Temp)
+print("Temperature in Fehrenheit: ",Fehreinheit)

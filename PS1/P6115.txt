@@ -1,0 +1,21 @@
+prn=float(input("Enter Principal Amount: "))
+yr=float(input("For How many Years? : "))
+
+
+if yr<1:
+    rate=5
+else:
+    if 1<=yr<3:
+        rate=5.5
+    else:
+        if 3<=yr<5:
+            rate=6
+        else:
+            rate=5.75
+SI=prn*rate/100*yr;
+MatAmt=prn+SI*yr
+print("Principal Amount:Rs.",prn)
+print("Rate Of Interest: ",rate,"%")
+print("Number Of Years : ",yr)
+print("Simple Interest :Rs.",SI)
+print("Maturity Amount :Rs.",MatAmt)

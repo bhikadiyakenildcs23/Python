@@ -1,0 +1,26 @@
+mylist = [1,2,'a','b',10.2,15.3,"manoj","raja"]
+
+intt=1
+count_i=0
+f=1.1
+count_f=0
+st="manoj"
+count_st=0
+count_chr=0
+
+for i in mylist:
+    if(type(intt) == type(i)):
+        count_i += 1
+    elif(type(f) == type(i)):
+        count_f += 1
+    elif(type(st) == type(i)):
+        if(len(i)>1):
+            count_st += 1
+        else:
+            count_chr += 1
+            
+print(f"total integers is: {count_i}")
+print(f"total Float is: {count_f}")
+print(f"total String is: {count_st}")
+print(f"total character is: {count_chr}")
+exit()

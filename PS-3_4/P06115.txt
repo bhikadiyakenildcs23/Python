@@ -1,0 +1,19 @@
+PS-3
+Q.6. Write a Python program to take input of a string from the user and then create a dictionary
+containing each character of the string along with their frequencies. (e.g. if the string is ‘banana’
+then output should be {'b': 1, 'a': 3, 'n': 2}.
+
+std = dict()
+inp = input("Enter A String:")
+
+for i in inp:
+    if i in std:
+        std[i] += 1
+    else:
+        std[i] = 1
+print(std)
+        
+    
+    
+
+

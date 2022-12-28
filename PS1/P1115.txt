@@ -1,0 +1,12 @@
+PrncplAmt=int(input("Enter Principal Amount:"))
+IntRate=float(input("Enter Interest Rate(in_%):"))
+yrs=int(input("For How Many Years? :"))
+
+SmplInt=PrncplAmt*IntRate/100
+MatureAmt=PrncplAmt+SmplInt*yrs
+
+print("Principal Amount   : RS.",PrncplAmt)
+print("Rate Of Interest   : IntRate",IntRate,"%")
+print("Number Of Years    : ",yrs)
+print("Simple Interest(1Yr: Rs.",SmplInt)
+print("Maturity Amount    : Rs.",MatureAmt)

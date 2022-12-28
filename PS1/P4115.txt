@@ -1,0 +1,11 @@
+a = input("Enter First value : ")
+b = input("Enter Second value: ")
+c = input("Enter Third value : ")
+if a>b and a>c:
+    print(a," is Greater!")
+else:
+        if b>c:
+            print(b," is Greater")
+        else:
+                if c>b:
+                    print(c," is Greater!")

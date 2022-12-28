@@ -1,0 +1,18 @@
+Definition:- Write a Python program to create a file of numbers 
+	     by taking input from the user and then display the 
+	     content of the file. You can take input of non-zero 
+	     numbers, with an appropriate prompt, from the user 
+	     until the user enters a zero to create the file assuming 
+	     that the numbers are non-zero.
+
+f=open('Demo.txt','w')
+print('enter data for file')
+while True:
+    no=int(input("Enter Numbers:"))
+    if no==0:
+        break
+    f.write(str(no))
+    f.write('\n')
+f.close()
+f=open('Demo.txt','r')
+print(f.read())

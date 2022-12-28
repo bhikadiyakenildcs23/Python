@@ -1,0 +1,34 @@
+PS-3
+Q.5. Write a Python program to create a dictionary of student data by taking input from the user,
+where each student data contains Rollno (to be considered as key), and marks in 3 subjects (to
+
+be considered as list of values). e.g. {1 : [45, 40, 35], 2 : [41, 38, 39], 3 : [35, 30, 37]}. Prepare
+mark list in the following format:
+dic={}
+
+while(True):
+
+    rno=int(input("Enter Roll No :"))
+    if(rno == 0):
+        break
+    else:
+        marks=[]
+        dic[rno]=marks
+
+        for i in range(3):
+            m1=int(input("Enter Marks :"))
+            marks.append(m1)
+
+        for key , val in dic.items():
+
+            if(key==rno):
+                
+                print("Roll No  Mark1  Mark2 Mark3  Total")
+                print("  " ,key , "   " ,val[0],"   " ,val[1],"   " , val[2] , "  " ,sum(val))
+
+'''
+for i in range(len(marks)):
+    
+        s=s+marks[i]
+print("Sum",s)
+''' 

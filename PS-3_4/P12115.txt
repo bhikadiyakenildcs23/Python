@@ -1,0 +1,15 @@
+PS-4
+PS-4
+"""
+Q.2. Write a Python program to create a text file of multiple lines. Display the following:
+
+1. Entire text file
+2. 1
+st n lines of the text tile.
+3. m lines starting from the nth line
+4. number of words in each line
+"""
+while(True):
+    inp = input("Enter 1 to show Entire File! \nEnter 2 to Show 'n' Line \nEnter 3 to display 'm' Lines From 'n'th Line \nEnter 4 to find number of words in each line! \n              Enter Here...: ")
+file = open("Tst4P1.txt","r")
+print(file.read())

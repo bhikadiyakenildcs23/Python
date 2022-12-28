@@ -1,0 +1,51 @@
+Definition:- Write a Python program to create a text file of multiple lines. 
+             Display the following:
+		1. Entire text file
+		2. 1st n lines of the text tile.
+		3. m lines starting from the nth line
+		4. number of words in each line 
+
+
+
+f=open('Demo2.txt','w')
+print('enter data for file')
+while True:
+    line=input()
+    if line=='end':
+        break
+    f.write(line)
+    f.write('\n')
+f.close()
+print('Entire text file is:')
+f=open('Demo2.txt','r')
+print(f.read())
+f.close()
+
+n=int(input('Enter number of line for display'))
+print('First n line is')
+with open('Demo2.txt')as file:
+    for line in (file.readlines()[:n]):
+        print(line,end='')
+
+        
+f=open('Demo2.txt','r')
+n=int(input('Enter number of line for display:'))
+position=int(input('enter the position:'))
+print('m lines starting from the nth is:=')
+line=f.readlines()
+for i in range(n):
+    print(line[position].strip())
+    position=position+1
+f.close()
+
+print('number of words in each line')
+f=open('Demo2.txt','r')
+i=0
+str1=""
+for line in f:
+    i=i+1
+    words_in_line=len(line.split())
+    str1=str1 + "words in Line No: "+str(i)+" are: "+str(words_in_line)+"\n"
+print(str1)
+f.close()
+

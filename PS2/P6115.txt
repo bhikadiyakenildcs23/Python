@@ -1,0 +1,36 @@
+mylist=['a','b','E','o',3,4,'*','/']
+
+def varify_it(a):
+    print("total number of item in list: ",len(mylist))
+    return len(mylist)
+
+def how_many_vovels(a):
+    vovels=0
+    for i in a:
+        if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vovels += 1
+    print("total number of vovels in list: ",vovels)
+    return vovels
+
+def how_many_consonant(a):
+    alfabet=['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','w','v','x','y','z']
+    vovels=0
+    for i in a:
+        for j in alfabet:
+            if(i==j):
+                vovels += 1
+    print("total number of words without vovels in list: ",vovels)
+    return vovels
+
+def how_many_without_vovel_consonant(a):
+    total = varify_it(a)
+    vovels = how_many_vovels(a)
+    consonant = how_many_consonant(a)
+    result = total - vovels - consonant
+    print(f"total character without vovels and consonant in list: {result}")
+    
+varify_it(mylist)
+how_many_vovels(mylist)
+how_many_consonant(mylist)
+how_many_without_vovel_consonant(mylist)
+exit()
